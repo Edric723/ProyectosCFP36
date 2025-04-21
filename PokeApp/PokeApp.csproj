@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
+
+<!--✅ 1. Clases y Estructuras de Datos
+Entrenador con lista de Pokemones
+
+Pokemon con stats y lista de Movimientos
+
+Movimiento con nombre, tipo, poder, puntería, etc.
+
+Constructores listos ✔️
+
+
+
+✅ 2. Sistema de Daño
+Fórmula Gen 1 adaptada ✔️
+
+STAB ✔️
+
+Variación (random 217–255) ✔️
+
+
+
+✅ 3. Orden de Turno
+Ataca el Pokémon con más velocidad ✔️
+
+Si la velocidad es igual, hay random para romper empate ✔️
+
+
+
+
+✅ 4. Reglas del Juego
+No hay IA, es jugador contra jugador ✔️
+
+Ambos eligen movimientos simultáneamente
+
+Sin ítems, sin estados alterados, sin cambios de stats ✔️
+
+Combate termina cuando un Pokémon llega a 0 PS ✔️
+
+Pokémon pueden repetirse entre entrenadores ✔️
+
+
+
+⏳ 5. Pendiente: Tabla de Tipos
+Tenés que armar la tabla de efectividad (por ejemplo: fuego vs planta = 2x)
+
+Esto implica:
+
+Crear una función ObtenerEfectividad(tipoAtaque, tipoDefensor)
+
+Puede devolver 2f, 1f, 0.5f, 0f dependiendo de la interacción
+
+
+
+
+✅ Cuando eso esté listo…
+Ya podés meterte de lleno con la lógica de combate:
+
+Entrada de turnos por jugador
+
+Cálculo de daño
+
+Aplicar daño y actualizar PS
+
+Mostrar lo que ocurrió ese turno
+
+Repetir hasta que uno pierda-->
+
+
