@@ -15,6 +15,9 @@ namespace PokeApp
         {
             // CREACIÓN DE MOVIMIENTOS:
             
+            // COMENTARIO DE TESTEO 1 2 3
+
+
             Movimiento impactoElectrico = new("Impacto Electrico", "Electrico", "Especial", 40, 100);
             Movimiento corte = new("Corte", "Normal", "Fisico", 50, 95);
             Movimiento latigoCepa = new("Latigo Cepa", "Planta", "Especial", 45, 100);
