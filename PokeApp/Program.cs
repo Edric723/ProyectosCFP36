@@ -15,7 +15,7 @@ namespace PokeApp
         {
             // CREACIÓN DE MOVIMIENTOS:
             
-            
+            // ####
 
             Movimiento impactoElectrico = new("Impacto Electrico", "Electrico", "Especial", 40, 100);
             Movimiento corte = new("Corte", "Normal", "Fisico", 50, 95);
@@ -86,21 +86,37 @@ namespace PokeApp
 
 
             // Lista PULL de todos los pokemones
-            List<Pokemon> Pull = [venusaur, charizard, blastoise, alakazam, machamp, jinx, zapdos, moltres, dragonair, snorlax, gengar, pikachu];
+            List<Pokemon> pull = [venusaur, charizard, blastoise, alakazam, machamp, jinx, zapdos, moltres, dragonair, snorlax, gengar, pikachu];
 
 
             // Creando entrenadores - Podría implementar un readline y que el usuario haga la creación del entrenador a futuro.
-            Entrenador ash = new("Ash Ketchum", []);
-            Entrenador misty = new("Misty", []);
+            //Entrenador ash = new("Ash Ketchum", []);
+            //Entrenador misty = new("Misty", []);
+
+            Entrenador entrenador1 = new("", new List<Pokemon>());
+            Entrenador entrenador2 = new("", new List<Pokemon>());
 
             //----------------------------------------------------------------------------------------------------------------------------
-
-            SeleccionarEquipo(Pull, ash, misty);
-            MostrarDefinicionDeEquipos(ash, misty);
+            InstanciarEntrenadores(entrenador1, entrenador2);
+            SeleccionarEquipo(pull, entrenador1, entrenador2);
+            MostrarDefinicionDeEquipos(entrenador1, entrenador2);
             AnunciarInicioDeCombate();
-            EmularCombate(ash, misty);
+            EmularCombate(entrenador1, entrenador2);
 
         }
+
+
+        public static void InstanciarEntrenadores(Entrenador entrenador1, Entrenador entrenador2)
+        {
+            Console.Write("Por favor ingresa tu nombre a continuación Entrenador/a: ");
+            entrenador1.Nombre = Console.ReadLine() ?? "Entrenador Anónimo 1";
+
+            Console.WriteLine();
+
+            Console.Write("Por favor ingresa tu nombre a continuación Entrenador/a: ");
+            entrenador2.Nombre = Console.ReadLine() ?? "Entrenador Anónimo 2";
+        }
+
 
         // PRINTS DE INFO (POKEMON, MOVIMIENTOS)
         public static void MostrarDefinicionDeEquipos(Entrenador entrenador1, Entrenador entrenador2)
